@@ -21,12 +21,12 @@ PORT=29501 bash dist_test.sh configs/mask_rcnn_nextvit_small_1x.py ../checkpoint
 
 ## Results
 
-| name | Pretrained Model | Method | Lr Schd | mAP_box | mAP_mask | log | mAP_box<sup>*</sup> |  mAP_mask<sup>*</sup> | config |
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| DeBiFormer-S | IN1k | MaskRCNN | 1x | 47.8 | 43.2 | [log]() | 48.1 | 43.6 | [config](./configs/coco/maskrcnn.1x.biformer_small.py) |
-| DeBiFormer-B | IN1k | MaskRCNN | 1x | 48.6 | 43.7 | [log]() | - | - | [config](./configs/coco/maskrcnn.1x.biformer_base.py) |
-| DeBiFormer-S | IN1k | RetinaNet | 1x | 45.9 | - | [log]() | 47.3 | - | [config](./configs/coco/retinanet.1x.biformer_small.py) |
-| DeBiFormer-B | IN1k | RetinaNet | 1x | 47.1 | - | [log]() |- | - |[config](./configs/coco/retinanet.1x.biformer_base.py) |
+| name | Pretrained Model | Method | Lr Schd | mAP_box | mAP_mask | weight | mAP_box<sup>*</sup> |  mAP_mask<sup>*</sup> | config |
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| DeBiFormer-S | IN1k | MaskRCNN | 1x | 47.8 | 43.2 | [weight](https://drive.google.com/drive/folders/1hiTS_Xq1EfCOpgIBLb08lKMS30SBslRt) | 48.1 | 43.6 | [config](./configs/coco/maskrcnn.1x.biformer_small.py) |
+| DeBiFormer-B | IN1k | MaskRCNN | 1x | 48.6 | 43.7 | [weight](https://drive.google.com/drive/folders/1hiTS_Xq1EfCOpgIBLb08lKMS30SBslRt) | -    | - | [config](./configs/coco/maskrcnn.1x.biformer_base.py) |
+| DeBiFormer-S | IN1k | RetinaNet | 1x | 45.9 | -   | [weight](https://drive.google.com/drive/folders/1hiTS_Xq1EfCOpgIBLb08lKMS30SBslRt) | 47.3 | - | [config](./configs/coco/retinanet.1x.biformer_small.py) |
+| DeBiFormer-B | IN1k | RetinaNet | 1x | 47.1 | -   | [weight](https://drive.google.com/drive/folders/1hiTS_Xq1EfCOpgIBLb08lKMS30SBslRt) |-     | - |[config](./configs/coco/retinanet.1x.biformer_base.py) |
 
 
 ## Acknowledgment 
