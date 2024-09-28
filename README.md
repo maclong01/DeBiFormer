@@ -3,11 +3,11 @@
 Official PyTorch implementation of **DeBiFormer**, from the following paper:
 
 [DeBiFormer: Vision Transformer with Deformable Agent Bi-level Routing Attention](). ACCV 2024.\
-[Chenyu Zhang](https://github.com/il1um), [Yuzhi Shi], [Tsubasa Hirakawa](https://thirakawa.github.io/), [Takayoshi Yamashita](https://scholar.google.co.jp/citations?user=hkguTPgAAAAJ&hl=en), [Hironobu Fujiyoshi](https://scholar.google.com/citations?user=CIHKZpEAAAAJ&hl=en), and [Tohgoroh Matsui](https://xn--p8ja5bwe1i.jp/profile.html)
+[Nguyen Huu Bao Long](https://github.com/maclong01), [Chenyu Zhang](https://github.com/il1um), Yuzhi Shi, [Tsubasa Hirakawa](https://thirakawa.github.io/), [Takayoshi Yamashita](https://scholar.google.co.jp/citations?user=hkguTPgAAAAJ&hl=en), [Hironobu Fujiyoshi](https://scholar.google.com/citations?user=CIHKZpEAAAAJ&hl=en), and [Tohgoroh Matsui](https://xn--p8ja5bwe1i.jp/profile.html)
 
 --- 
 <p align="left">
-<img src="assets/teaser.png" width=60% height=60% 
+<img src="assets/all_attention_3_1_v2.pdf" width=60% height=60% 
 class="center">
 </p>
 
