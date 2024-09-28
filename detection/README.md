@@ -25,8 +25,8 @@ PORT=29501 bash dist_test.sh configs/mask_rcnn_debi_small_1x.py ../checkpoints/m
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | DeBiFormer-S | IN1k | MaskRCNN | 1x | 47.5 | 42.5 | [weight](https://drive.google.com/drive/folders/1hiTS_Xq1EfCOpgIBLb08lKMS30SBslRt) |[config](./configs/mask_rcnn_debi_small_1x.py) |
 | DeBiFormer-B | IN1k | MaskRCNN | 1x | 48.5 | 43.2 | [weight](https://drive.google.com/drive/folders/1hiTS_Xq1EfCOpgIBLb08lKMS30SBslRt) | [config](./configs/mask_rcnn_debi_base_1x.py) |
-| DeBiFormer-S | IN1k | RetinaNet | 1x | 45.6 | -   | [weight](https://drive.google.com/drive/folders/1hiTS_Xq1EfCOpgIBLb08lKMS30SBslRt) |[config](./configs/retinanet_debi_small_1x.py) |
-| DeBiFormer-B | IN1k | RetinaNet | 1x | 47.1 | -   | [weight](https://drive.google.com/drive/folders/1hiTS_Xq1EfCOpgIBLb08lKMS30SBslRt) |[config](./configs/retinanet_debi_base_1x.py) |
+| DeBiFormer-S | IN1k | RetinaNet | 1x | 45.6 | 49.3  | [weight](https://drive.google.com/drive/folders/1hiTS_Xq1EfCOpgIBLb08lKMS30SBslRt) |[config](./configs/retinanet_debi_small_1x.py) |
+| DeBiFormer-B | IN1k | RetinaNet | 1x | 47.1 | 51.1  | [weight](https://drive.google.com/drive/folders/1hiTS_Xq1EfCOpgIBLb08lKMS30SBslRt) |[config](./configs/retinanet_debi_base_1x.py) |
 
 
 ## Acknowledgment 
