@@ -21,12 +21,12 @@ PORT=29501 bash dist_test.sh configs/mask_rcnn_debi_small_1x.py ../checkpoints/m
 
 ## Results
 
-| name | Pretrained Model | Method | Lr Schd | mAP_box | mAP_mask/AP_M | weight | config |
+| name | Pretrained Model | Method | Lr Schd | mAP_box | mAP_mask/AP_M | Model | config |
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| DeBiFormer-S | IN1k | MaskRCNN | 1x | 47.5 | 42.5 | [weight](https://drive.google.com/drive/folders/1hiTS_Xq1EfCOpgIBLb08lKMS30SBslRt) |[config](./configs/mask_rcnn_debi_small_1x.py) |
-| DeBiFormer-B | IN1k | MaskRCNN | 1x | 48.5 | 43.2 | [weight](https://drive.google.com/drive/folders/1hiTS_Xq1EfCOpgIBLb08lKMS30SBslRt) | [config](./configs/mask_rcnn_debi_base_1x.py) |
-| DeBiFormer-S | IN1k | RetinaNet | 1x | 45.6 | 49.3  | [weight](https://drive.google.com/drive/folders/1hiTS_Xq1EfCOpgIBLb08lKMS30SBslRt) |[config](./configs/retinanet_debi_small_1x.py) |
-| DeBiFormer-B | IN1k | RetinaNet | 1x | 47.1 | 51.1  | [weight](https://drive.google.com/drive/folders/1hiTS_Xq1EfCOpgIBLb08lKMS30SBslRt) |[config](./configs/retinanet_debi_base_1x.py) |
+| DeBiFormer-S | IN1k | MaskRCNN | 1x | 47.5 | 42.5 | [model](https://drive.google.com/drive/folders/1hiTS_Xq1EfCOpgIBLb08lKMS30SBslRt) |[config](./configs/mask_rcnn_debi_small_1x.py) |
+| DeBiFormer-B | IN1k | MaskRCNN | 1x | 48.5 | 43.2 | [model](https://drive.google.com/drive/folders/1hiTS_Xq1EfCOpgIBLb08lKMS30SBslRt) | [config](./configs/mask_rcnn_debi_base_1x.py) |
+| DeBiFormer-S | IN1k | RetinaNet | 1x | 45.6 | 49.3  | [model](https://drive.google.com/drive/folders/1hiTS_Xq1EfCOpgIBLb08lKMS30SBslRt) |[config](./configs/retinanet_debi_small_1x.py) |
+| DeBiFormer-B | IN1k | RetinaNet | 1x | 47.1 | 51.1  | [model](https://drive.google.com/drive/folders/1hiTS_Xq1EfCOpgIBLb08lKMS30SBslRt) |[config](./configs/retinanet_debi_base_1x.py) |
 
 
 
