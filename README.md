@@ -22,8 +22,8 @@ class="center">
 
 ### ImageNet-1K trained models
 
-| name | resolution |acc@1 | #params | FLOPs | model | log | tensorboard log<sup>*</sup> |
-|:---:|:---:|:---:|:---:| :---:|:---:|:---:| :---:| 
+| name | resolution |acc@1 | #params | FLOPs | model | log |
+|:---:|:---:|:---:|:---:| :---:|:---:|:---:|
 | DeBiFormer-T | 224x224 | 81.9 | 21.4 M | 2.6 G | [model](https://drive.google.com/drive/folders/1K_Zk5Etx2oh3yVccr71m1R3bTqWAI2bg) | [log](https://drive.google.com/drive/folders/1K_Zk5Etx2oh3yVccr71m1R3bTqWAI2bg) |
 | DeBiFormer-S | 224x224 | 83.9 | 44 M | 5.4 G | [model](https://drive.google.com/drive/folders/1OmWKob1ECHgVMs5wSvZs3XF665zFJdHg) | [log](https://drive.google.com/drive/folders/1OmWKob1ECHgVMs5wSvZs3XF665zFJdHg) |
 | DeBiFormer-B | 224x224 | 84.4 | 77 M | 11.8 G | [model](https://drive.google.com/drive/folders/1Ae3l2Q9nPbpOgSiTtX_HWyvSXIPQ9jce) | [log](https://drive.google.com/drive/folders/1Ae3l2Q9nPbpOgSiTtX_HWyvSXIPQ9jce) | 
@@ -35,7 +35,6 @@ class="center">
 First, clone the repository locally:
 ```
 git clone https://github.com/maclong01/DeBiFormer.git
-```
 pip3 install -r requirements.txt
 ```
 ## Data preparation
