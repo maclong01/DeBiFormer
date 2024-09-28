@@ -3,7 +3,7 @@ model = dict(
     type='EncoderDecoder',
     backbone=dict(
         type='debi_base',
-        resume='/data/Next-ViT/nextvit_cls_exp/1013_012125/checkpoint_best.pth'
+        resume='/data/DeBi/checkpoint_best.pth'
     ),
     decode_head=dict(
         type='UPerHead',
