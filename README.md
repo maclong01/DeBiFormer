@@ -78,7 +78,7 @@ bash train.sh 8 --model debiformer_small --batch-size 256 --lr 5e-4 --warmup-epo
 
 
 ## Acknowledgement
-This repository is built using the [timm](https://github.com/rwightman/pytorch-image-models) library, and [DAT](https://github.com/LeapLabTHU/DAT), [BiFormer](https://github.com/rayleizhu/BiFormer) repositories.
+This repository is built using the [timm](https://github.com/rwightman/pytorch-image-models) library, [DAT](https://github.com/LeapLabTHU/DAT), and [BiFormer](https://github.com/rayleizhu/BiFormer) repositories.
 
 ## License
 This project is released under the MIT license. Please see the [LICENSE](LICENSE) file for more information.
