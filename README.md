@@ -24,16 +24,11 @@ class="center">
 
 | name | resolution |acc@1 | #params | FLOPs | model | log | tensorboard log<sup>*</sup> |
 |:---:|:---:|:---:|:---:| :---:|:---:|:---:| :---:| 
-| DeBiFormer-T | 224x224 | 81.4 | 13.1 M | 2.2 G | [model](https://api.onedrive.com/v1.0/shares/s!AkBbczdRlZvChHEOoGkgwgQzEDlM/root/content) | [log](https://1drv.ms/t/s!AkBbczdRlZvChHNvg1b_QV_Ptw_T?e=Tbuf4l) | - |
-| DeBiFormer-S | 224x224 | 83.8 | 25.5 M | 4.5 G | [model](https://api.onedrive.com/v1.0/shares/s!AkBbczdRlZvChHDyM-x9KWRBZ832/root/content) | [log](https://1drv.ms/t/s!AkBbczdRlZvChHQKrsNAo0PCpgWz?e=k7V8xX) |[tensorboard.dev](https://tensorboard.dev/experiment/VQAZonmIRjasGaVDPloM5Q/#scalars) |
-| DeBiFormer-B | 224x224 | 84.3 | 56.8 M | 9.8 G | [model](https://api.onedrive.com/v1.0/shares/s!AkBbczdRlZvChHI_XPhoadjaNxtO/root/content) | [log](https://1drv.ms/t/s!AkBbczdRlZvChHWq2YS_Iwryhf1g?e=GWiMy9) | - |
+| DeBiFormer-T | 224x224 | 81.9 | 21.4 M | 2.6 G | [model](https://drive.google.com/drive/folders/1K_Zk5Etx2oh3yVccr71m1R3bTqWAI2bg) | [log](https://drive.google.com/drive/folders/1K_Zk5Etx2oh3yVccr71m1R3bTqWAI2bg) |
+| DeBiFormer-S | 224x224 | 83.9 | 44 M | 5.4 G | [model](https://drive.google.com/drive/folders/1OmWKob1ECHgVMs5wSvZs3XF665zFJdHg) | [log](https://drive.google.com/drive/folders/1OmWKob1ECHgVMs5wSvZs3XF665zFJdHg) |
+| DeBiFormer-B | 224x224 | 84.4 | 77 M | 11.8 G | [model](https://drive.google.com/drive/folders/1Ae3l2Q9nPbpOgSiTtX_HWyvSXIPQ9jce) | [log](https://drive.google.com/drive/folders/1Ae3l2Q9nPbpOgSiTtX_HWyvSXIPQ9jce) | 
 
 
-<font size=1>* : reproduced after the acceptance of our paper.</font>
-
-Here the `BiFormer-STL`(**S**win-**T**iny-**L**ayout) model is used in our ablation study. We hope it provides a good start proint for developing your own awsome attention mechanisms.
-
-All files can be accessed from [onedrive](https://1drv.ms/u/s!AkBbczdRlZvChGsXFqAA-PVnA-R8?e=IPlOCG).
 
 ## Installation
 Please check [INSTALL.md](INSTALL.md) for installation instructions. 
