@@ -20,8 +20,8 @@ PORT=29501 bash dist_test.sh configs/fpn_512_debi_base_80k.py ../checkpoints/fpn
 
 | name | Pretrained Model | Method | Crop Size | Lr Schd | mIoU | mIoU (ms + flip) | config |
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| BiFormer-B | IN1k | S-FPN | 512x512 | 80K | 49.9 | -  | - | [config](./configs/fpn_512_debi_base_80k.py)|
-| BiFormer-B | IN1k | UPerNet | 512x512 | 160K | 51.0 | 51.7 |  - | [config](./configs/upernet_512_debi_base_160k.py) |
+| BiFormer-B | IN1k | S-FPN | 512x512 | 80K | 49.9 | -  |[config](./configs/fpn_512_debi_base_80k.py)|
+| BiFormer-B | IN1k | UPerNet | 512x512 | 160K | 51.0 | 51.7 |[config](./configs/upernet_512_debi_base_160k.py) |
 
 ## Acknowledgment 
 
