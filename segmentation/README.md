@@ -13,7 +13,7 @@ To evaluate Semantic FPN 80k(single scale) with DeBiFormer-B backbone using 8 gp
 ```shell
 cd segmentation/
 PORT=29501 bash dist_test.sh configs/fpn_512_debi_base_80k.py ../checkpoints/fpn_80k_debi_base.pth 8 --eval mIoU
-
+```
 
 
 #### Results
