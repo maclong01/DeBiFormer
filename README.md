@@ -7,7 +7,7 @@ Official PyTorch implementation of **DeBiFormer**, from the following paper:
 
 --- 
 <p align="left">
-<img src="assets/all_attention_3_1_v2.pdf" width=60% height=60% 
+<img src="assets/all_attention_3_1_v2-1.png" width=60% height=60% 
 class="center">
 </p>
 
