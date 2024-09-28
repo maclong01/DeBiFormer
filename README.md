@@ -30,59 +30,56 @@ class="center">
 
 
 
-## Installation
-Please check [INSTALL.md](INSTALL.md) for installation instructions. 
+# Usage
 
-## Evaluation
-
-We did evaluation on a slurm cluster environment, using the command below:
-
-```bash
-python hydra_main.py \
-    data_path=./data/in1k input_size=224  batch_size=128 dist_eval=true \
-    +slurm=${CLUSTER_ID} slurm.nodes=1 slurm.ngpus=8 \
-    eval=true load_release=true model='biformer_small'
+First, clone the repository locally:
 ```
-
-To test on a local machine, you may try
-
-```bash
-python -m torch.distributed.launch --nproc_per_node=8 main.py \
-  --data_path ./data/in1k --input_size 224 --batch_size 128 --dist_eval \
-  --eval --load_release --model biformer_small
+git clone https://github.com/maclong01/DeBiFormer.git
 ```
-
-This should give 
+pip3 install -r requirements.txt
 ```
-* Acc@1 83.754 Acc@5 96.638 loss 0.869
-Accuracy of the network on the 50000 test images: 83.8%
-```
+## Data preparation
 
-**Note**: By setting `load_release=true`, the released checkpoints will be automatically downloaded, so you do not need to download manually in advance.
-
-## Training
-
-To launch training on a slurm cluster, use the command below:
-
-```bash
-python hydra_main.py \
-    data_path=./data/in1k input_size=224  batch_size=128 dist_eval=true \
-    +slurm=${CLUSTER_ID} slurm.nodes=1 slurm.ngpus=8 \
-    model='biformer_small'  drop_path=0.15 lr=5e-4
-```
-
-**Note**: Our codebase automatically generates output directory for experiment logs and checkpoints, according to the passed arguments. For example, the command above will produce an output directory like
+Download and extract ImageNet train and val images from http://image-net.org/.
+The directory structure is the standard layout for the torchvision [`datasets.ImageFolder`](https://pytorch.org/docs/stable/torchvision/datasets.html#imagefolder), and the training and validation data is expected to be in the `train/` folder and `val/` folder respectively:
 
 ```
-$ tree -L 3 outputs/ 
-outputs/
-└── cls
-    └── batch_size.128-drop_path.0.15-input_size.224-lr.5e-4-model.biformer_small-slurm.ngpus.8-slurm.nodes.2
-        └── 20230307-21:33:26
+/path/to/imagenet/
+  train/
+    class1/
+      img1.jpeg
+    class2/
+      img2.jpeg
+  val/
+    class1/
+      img3.jpeg
+    class/2
+      img4.jpeg
 ```
+
+
+#### Training
+
+To train DeBiFormer-S on ImageNet  using 8 gpus for 300 epochs, run:
+
+```shell
+cd classification/
+bash train.sh 8 --model debiformer_small --batch-size 256 --lr 5e-4 --warmup-epochs 20 --weight-decay 0.1 --data-path your_imagenet_path
+```
+
+#### Evaluation 
+
+To evaluate the performance of DeBiFormer-S on ImageNet using 8 gpus, run:
+```shell
+cd classification/
+bash train.sh 8 --model debiformer_small --batch-size 256 --lr 5e-4 --warmup-epochs 20 --weight-decay 0.1 --data-path your_imagenet_path --resume ../checkpoints/debiformer_small_in1k_224.pth --eval
+```
+
+
+
 
 ## Acknowledgement
-This repository is built using the [timm](https://github.com/rwightman/pytorch-image-models) library, and [ConvNext](https://github.com/facebookresearch/ConvNeXt), [UniFormer](https://github.com/Sense-X/UniFormer) repositories.
+This repository is built using the [timm](https://github.com/rwightman/pytorch-image-models) library, and [DAT](https://github.com/LeapLabTHU/DAT), [BiFormer](https://github.com/rayleizhu/BiFormer) repositories.
 
 ## License
 This project is released under the MIT license. Please see the [LICENSE](LICENSE) file for more information.
@@ -90,22 +87,10 @@ This project is released under the MIT license. Please see the [LICENSE](LICENSE
 ## Citation
 If you find this repository helpful, please consider citing:
 ```bibtex
-@Article{zhu2023biformer,
-  author  = {Lei Zhu and Xinjiang Wang and Zhanghan Ke and Wayne Zhang and Rynson Lau},
-  title   = {BiFormer: Vision Transformer with Bi-Level Routing Attention},
-  journal = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
-  year    = {2023},
+@Article{baolong2024debiformer,
+  author  = {NguyenHuu BaoLong and Chenyu Zhang and Yuzhi Shi and Takayoshi Yamashita and Tsubasa Hirakawa and Hironobu Fujiyoshi and Tohgoroh Matsui},
+  title   = {DeBiFormer: Vision Transformer with Deformable Agent Bi-level Routing Attention},
+  journal = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (ACCV)},
+  year    = {2024},
 }
 ```
-
-## TODOs
-- [x] Add camera-ready paper link
-- [x] IN1k standard training code, log, and pretrained checkpoints
-- [ ] IN1k token-labeling code
-- [x] Semantic segmentation code
-- [x] Object detection code
-- [x] Swin-Tiny-Layout (STL) models
-- [x] Refactor BRA and BiFormer code
-- [ ] Visualization demo 
-- [x] ~~More efficient implementation with triton~~. See [triton issue #1279](https://github.com/openai/triton/issues/1279)
-- [ ] More efficient implementation (fusing gather and attention) with CUDA
