@@ -118,17 +118,6 @@ optimizer = dict(
             norm=dict(decay_mult=0.0))))
 
 
-#fp16 = None
-#optimizer_config = dict(
-#    grad_clip=None,
-#    type='Fp16OptimizerHook',
-#    coalesce=True,
-#    bucket_size_mb=-1,
-#    loss_scale='dynamic',
-#    distributed=True)
-
-#optimizer_config = dict()
-
 optimizer_config = dict(type='Fp16OptimizerHook', loss_scale=512.0)
 fp16 = dict()
 
@@ -142,12 +131,6 @@ lr_config = dict(
     min_lr=0.0,
     by_epoch=False)
 
-#lr_config = dict(
-#    policy='CosineAnnealing',
-#    warmup='linear',
-#    warmup_iters = 3000,
-#    warmup_ratio = 1.0 / 10,
-#    min_lr_ratio = 1e-10)
 
 # 8GPU
 runner = dict(type='IterBasedRunner', max_iters=160000)
