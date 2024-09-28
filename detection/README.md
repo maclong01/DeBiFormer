@@ -29,7 +29,6 @@ PORT=29501 bash dist_test.sh configs/mask_rcnn_debi_small_1x.py ../checkpoints/m
 | DeBiFormer-B | IN1k | RetinaNet | 1x | 47.1 | 51.1  | [weight](https://drive.google.com/drive/folders/1hiTS_Xq1EfCOpgIBLb08lKMS30SBslRt) |[config](./configs/retinanet_debi_base_1x.py) |
 
 
-## Acknowledgment 
 
 ## Acknowledgement
 This repository is built using the [timm](https://github.com/rwightman/pytorch-image-models) library, and [DAT](https://github.com/LeapLabTHU/DAT), [BiFormer](https://github.com/rayleizhu/BiFormer) repositories.
