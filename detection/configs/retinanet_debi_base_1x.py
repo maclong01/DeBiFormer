@@ -1,7 +1,7 @@
 model = dict(
     type='RetinaNet',
     backbone=dict(type='debi_base',
-                  resume='/data/Next-ViT/nextvit_cls_exp/1013_012125/checkpoint_best.pth',),
+                  resume='/data/DeBi/checkpoint_best.pth',),
     neck=dict(
         type='FPN',
         in_channels=[96, 192, 384, 768],
