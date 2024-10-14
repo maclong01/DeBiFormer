@@ -2,8 +2,9 @@
 
 Official PyTorch implementation of **DeBiFormer**, from the following paper:
 
-[DeBiFormer: Vision Transformer with Deformable Agent Bi-level Routing Attention](). ACCV 2024.\
+[DeBiFormer: Vision Transformer with Deformable Agent Bi-level Routing Attention](https://arxiv.org/pdf/2410.08582). ACCV 2024.\
 [Nguyen Huu Bao Long](https://github.com/maclong01), [Chenyu Zhang](https://github.com/il1um), Yuzhi Shi, [Tsubasa Hirakawa](https://thirakawa.github.io/), [Takayoshi Yamashita](https://scholar.google.co.jp/citations?user=hkguTPgAAAAJ&hl=en), [Hironobu Fujiyoshi](https://scholar.google.com/citations?user=CIHKZpEAAAAJ&hl=en), and [Tohgoroh Matsui](https://xn--p8ja5bwe1i.jp/profile.html)
+
 
 --- 
 <p align="left">
