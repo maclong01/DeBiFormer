@@ -90,7 +90,7 @@ If you find this repository helpful, please consider citing:
 @Article{baolong2024debiformer,
   author  = {NguyenHuu BaoLong and Chenyu Zhang and Yuzhi Shi and Takayoshi Yamashita and Tsubasa Hirakawa and Hironobu Fujiyoshi and Tohgoroh Matsui},
   title   = {DeBiFormer: Vision Transformer with Deformable Agent Bi-level Routing Attention},
-  journal = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (ACCV)},
+  journal = {Proceedings of the IEEE/CVF Asian Conference on Computer Vision (ACCV)},
   year    = {2024},
 }
 ```
