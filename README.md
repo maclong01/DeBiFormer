@@ -7,7 +7,7 @@ Official PyTorch implementation of **DeBiFormer**, from the following paper:
 
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/debiformer-vision-transformer-with-deformable/object-detection-on-coco-2017)](https://paperswithcode.com/sota/object-detection-on-coco-2017?p=debiformer-vision-transformer-with-deformable)
 
-
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/debiformer-vision-transformer-with-deformable/semantic-segmentation-on-ade20k)](https://paperswithcode.com/sota/semantic-segmentation-on-ade20k?p=debiformer-vision-transformer-with-deformable)
 
 --- 
 <p align="left">
