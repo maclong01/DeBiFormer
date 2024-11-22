@@ -5,8 +5,8 @@ Official PyTorch implementation of **DeBiFormer**, from the following paper:
 [DeBiFormer: Vision Transformer with Deformable Agent Bi-level Routing Attention](https://arxiv.org/pdf/2410.08582). ACCV 2024.\
 [Nguyen Huu Bao Long](https://github.com/maclong01), [Chenyu Zhang](https://github.com/il1um), Yuzhi Shi, [Tsubasa Hirakawa](https://thirakawa.github.io/), [Takayoshi Yamashita](https://scholar.google.co.jp/citations?user=hkguTPgAAAAJ&hl=en), [Hironobu Fujiyoshi](https://scholar.google.com/citations?user=CIHKZpEAAAAJ&hl=en), and [Tohgoroh Matsui](https://xn--p8ja5bwe1i.jp/profile.html)
 
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/debiformer-vision-transformer-with-deformable/object-detection-on-coco-2017)](https://paperswithcode.com/sota/object-detection-on-coco-2017?p=debiformer-vision-transformer-with-deformable)
 
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/debiformer-vision-transformer-with-deformable/object-detection-on-coco-2017)](https://paperswithcode.com/sota/object-detection-on-coco-2017?p=debiformer-vision-transformer-with-deformable)
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/debiformer-vision-transformer-with-deformable/semantic-segmentation-on-ade20k)](https://paperswithcode.com/sota/semantic-segmentation-on-ade20k?p=debiformer-vision-transformer-with-deformable)
 
 --- 
