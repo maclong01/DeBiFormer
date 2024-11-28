@@ -1,34 +1,25 @@
 import numpy as np
-from collections import defaultdict
+from collections import defaultdict, OrderedDict
 import matplotlib.pyplot as plt
-from timm.models.registry import register_model
 import torch
 import torch.nn as nn
 import torch.optim as optim
 import torch.nn.functional as F
+from torch import Tensor
 from torchvision import datasets, transforms
 import torchvision
-
-from torch import Tensor
 from typing import Tuple
 import numbers
-from timm.models.layers import to_2tuple, trunc_normal_
-from einops import rearrange
 import gc
-import torch
-import torch.nn as nn
-from einops import rearrange
-from timm.models.layers import DropPath, to_2tuple, trunc_normal_
-from collections import OrderedDict
-import torch
-import torch.nn as nn
-import torch.nn.functional as F
+
+from timm.models.registry import register_model
+from timm.models.layers import to_2tuple, trunc_normal_, DropPath
+from timm.models.vision_transformer import _cfg
 from einops import rearrange
 from einops.layers.torch import Rearrange
 from fairscale.nn.checkpoint import checkpoint_wrapper
-from timm.models import register_model
-from timm.models.layers import DropPath, to_2tuple, trunc_normal_
-from timm.models.vision_transformer import _cfg
+
+# Your model and other code here
 
 
 class LayerNorm2d(nn.Module):
