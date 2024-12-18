@@ -94,10 +94,12 @@ This project is released under the MIT license. Please see the [LICENSE](LICENSE
 ## Citation
 If you find this repository helpful, please consider citing:
 ```bibtex
-@Article{baolong2024debiformer,
-  author  = {NguyenHuu BaoLong and Chenyu Zhang and Yuzhi Shi and Takayoshi Yamashita and Tsubasa Hirakawa and Hironobu Fujiyoshi and Tohgoroh Matsui},
-  title   = {DeBiFormer: Vision Transformer with Deformable Agent Bi-level Routing Attention},
-  journal = {Proceedings of the Asian Conference on Computer Vision (ACCV)},
-  year    = {2024},
+@InProceedings{BaoLong_2024_ACCV,
+    author    = {BaoLong, NguyenHuu and Zhang, Chenyu and Shi, Yuzhi and Hirakawa, Tsubasa and Yamashita, Takayoshi and Matsui, Tohgoroh and Fujiyoshi, Hironobu},
+    title     = {DeBiFormer: Vision Transformer with Deformable Agent Bi-level Routing Attention},
+    booktitle = {Proceedings of the Asian Conference on Computer Vision (ACCV)},
+    month     = {December},
+    year      = {2024},
+    pages     = {4455-4472}
 }
 ```
