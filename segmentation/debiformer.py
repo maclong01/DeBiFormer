@@ -1047,8 +1047,11 @@ class DeBiLevelRoutingAttention(nn.Module):
         attn_weight = self.attn_act(attn_weight)
         out = attn_weight @ v
 
-        out_def = rearrange(out, '(n j i) m (h w) c -> n (m c) (j h) (i w)', j=self.n_win, i=self.n_win, h=Hg//self.n_win, w=Wg//self.n_win).contiguous()
-
+        if self.auto_pad:
+          out_def = rearrange(out, '(n j i) m (h w) c -> n (m c) (j h) (i w)', j=self.n_win, i=self.n_win, h=Hg//self.n_win, w=Wg//self.n_win).contiguous()
+        else:
+          out_def = rearrange(out, '(n j i) m (h w) c -> n (m c) (j h) (i w)', j=self.n_win, i=self.n_win, h=Hk//self.n_win, w=Wk//self.n_win).contiguous()
+        
         out_def = out_def + lepe1
 
         out_def = self.unifyheads1(out_def)
